@@ -70,4 +70,4 @@ Beginner learning project. Final electrical and manufacturing validation should 
 
 ## 3D PCB View
 
-![3D view of the LED indicator PCB](images/pcb-3d-view.png)
+![3D view of the LED indicator PCB](LED_PCB_Design/images/pcb-3d-view.png)
