@@ -1,73 +1,80 @@
-# Simple_PCB_Design
-# KiCad LED Indicator PCB
+# Simple PCB Design | KiCad LED Indicator
 
 ## Project Overview
 
-This is a beginner-level printed circuit board (PCB) project designed using KiCad. It implements a simple LED indicator circuit with through-hole components.
+A simple LED indicator PCB designed using **KiCad**, featuring a 5 mm through-hole LED, a 330 Ω current-limiting resistor, and a 2-pin connector.
 
-The project demonstrates the basic PCB design workflow, from schematic creation through PCB layout and manufacturing file generation.
-
-## Objectives
-
-- Create an electronic schematic.
-- Assign through-hole component footprints.
-- Arrange components and draw the PCB outline.
-- Route copper tracks.
-- Perform electrical and PCB design checks.
-- Generate and inspect Gerber and drill files.
+This project demonstrates schematic design, PCB layout, copper routing, and manufacturing file generation.
 
 ## Components
 
-| Reference | Component | Value / Description |
+| Reference | Component | Specification |
 |---|---|---|
-| J1 | 2-pin connector | 2.54 mm pin header |
-| R1 | Resistor | 330 Ω, axial through-hole |
-| D1 | LED | 5 mm through-hole LED |
+| J1 | 2-Pin Connector | 2.54 mm pin header |
+| R1 | Resistor | 330 Ω, through-hole |
+| D1 | LED | 5 mm, through-hole |
 
-**Note:** Physical component dimensions and LED polarity must be verified before fabrication.
+## Software & Tools
 
-## Tools Used
-
-- KiCad
 - KiCad Schematic Editor
 - KiCad PCB Editor
 - KiCad Electrical Rules Checker (ERC)
 - KiCad Design Rules Checker (DRC)
 - KiCad Gerber Viewer
+- KiCad 3D Viewer
 
-## Project Files
+## Schematic
 
-- `PCB_Learning.kicad_pro` — project settings
-- `PCB_Learning.kicad_sch` — schematic
-- `PCB_Learning.kicad_pcb` — PCB layout
-- `manufacturing/` — Gerber and drill outputs
-- `images/` — screenshots of the design
+![Circuit Schematic](LED_PCB_Design/images/schematic.png)
 
-## Design Workflow
+## PCB Layout
 
-1. Created the project and schematic.
-2. Connected the resistor, LED, and power connector.
-3. Assigned THT footprints.
-4. Updated the PCB from the schematic.
-5. Arranged the component footprints.
-6. Created the board outline on the Edge.Cuts layer.
-7. Routed the copper tracks.
-8. Ran ERC and DRC checks.
-9. Generated Gerber and drill files.
-10. Inspected the manufacturing outputs in Gerber Viewer.
+![PCB Layout](LED_PCB_Design/images/pcb-layout.png)
 
-## Manufacturing Notes
+## Gerber View
 
-The Gerber and drill files are provided as fabrication outputs. Review the design, check the component pinout and footprint dimensions, and verify manufacturer requirements before ordering a physical board.
-
-## Learning Outcomes
-
-This project provided hands-on practice with schematic capture, through-hole footprint assignment, PCB layout, copper routing, design-rule checking, and manufacturing file generation.
-
-## Status
-
-Beginner learning project. Final electrical and manufacturing validation should be completed before production.
+![Gerber View](LED_PCB_Design/images/gerber-view.png)
 
 ## 3D PCB View
 
-![3D view of the LED indicator PCB](LED_PCB_Design/images/pcb-3d-view.png)
+![3D PCB View](LED_PCB_Design/images/pcb-3d-view.png)
+
+## Project Files
+
+| File | Description |
+|---|---|
+| `PCB_Learning.kicad_pro` | KiCad project configuration |
+| `PCB_Learning.kicad_sch` | Circuit schematic |
+| `PCB_Learning.kicad_pcb` | PCB layout and routing |
+
+## Gerber & Drill Files
+
+The following manufacturing files were generated using KiCad:
+
+| File | Description |
+|---|---|
+| `PCB_Learning-Edge_Cuts.gbr` | PCB board outline |
+| `PCB_Learning-F_Cu.gbr` | Front copper layer |
+| `PCB_Learning-F_Mask.gbr` | Front solder mask |
+| `PCB_Learning-F_Silkscreen.gbr` | Front silkscreen layer |
+| `PCB_Learning-job.gbrjob` | Gerber job configuration |
+| `PCB_Learning-PTH.drl` | Plated through-hole drill data |
+| `PCB_Learning-NPTH.drl` | Non-plated through-hole drill data |
+
+## Design Workflow
+
+1. Created the circuit schematic in KiCad.
+2. Added the connector, resistor, and LED.
+3. Assigned through-hole footprints to the components.
+4. Transferred the schematic components to the PCB Editor.
+5. Arranged the components on the board.
+6. Created the PCB outline using the `Edge.Cuts` layer.
+7. Routed the copper tracks.
+8. Performed ERC and DRC checks.
+9. Generated Gerber and drill files.
+10. Inspected the manufacturing layers using Gerber Viewer.
+11. Visualized the PCB using KiCad 3D Viewer.
+
+---
+
+**Designed using KiCad | PCB Design Portfolio**
